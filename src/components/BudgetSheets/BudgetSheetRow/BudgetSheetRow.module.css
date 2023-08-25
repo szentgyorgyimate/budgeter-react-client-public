@@ -1,0 +1,57 @@
+.budgetsheet {
+  background-color: #fff;
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.row-header {
+  padding: 0 0 12px 0;
+  display: flex;
+  font-weight: bold;
+}
+
+.row-header a {
+  margin: 0 0 0 auto;
+}
+
+.row-header a,
+.row-header a:active,
+.row-header a:visited,
+.row-header a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.edit-button {
+  margin: 0 0 0 8px;
+  cursor: pointer;
+}
+
+.delete-button {
+  margin: 0 0 0 8px;
+  cursor: pointer;
+  color: #da5a53;
+}
+
+.row {
+  display: flex;
+}
+
+.data {
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+}
+
+.data .amount {
+  margin: 6px 0 0 0;
+}
+
+.green i {
+  color: #60a917;
+}
+
+.red i {
+  color: #da5a53;
+}

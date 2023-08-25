@@ -1,0 +1,16 @@
+export const INIT = 'INIT';
+export const ADD_INIT = 'ADD_INIT';
+export const ADD_SUCCESS = 'ADD_SUCCESS';
+export const ADD_CANCEL = 'ADD_CANCEL';
+export const EDIT_INIT = 'EDIT_INIT';
+export const EDIT_SUCCESS = 'EDIT_SUCCESS';
+export const EDIT_CANCEL = 'EDIT_CANCEL';
+export const DELETE_INIT = 'DELETE_INIT';
+export const DELETE_SUCCESS = 'DELETE_SUCCESS';
+export const DELETE_CANCEL = 'DELETE_CANCEL';
+export const CREATE_DEBT_INIT = 'CREATE_DEBT_INIT';
+export const CREATE_DEBT_SUCCESS = 'CREATE_DEBT_SUCCESS';
+export const CREATE_DEBT_CANCEL = 'CREATE_DEBT_CANCEL';
+export const MOVE_MONEY_INIT = 'MOVE_MONEY_INIT';
+export const MOVE_MONEY_SUCCESS = 'MOVE_MONEY_SUCCESS';
+export const MOVE_MONEY_CANCEL = 'MOVE_MONEY_CANCEL';

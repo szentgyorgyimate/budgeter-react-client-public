@@ -1,0 +1,189 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'leftsidebar main rightsidebar';
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 280px 1fr 280px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.header span {
+    display: inline-block;
+    width: 256px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header button {
+    padding: 8px;
+    text-transform: uppercase;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-left: 16px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.header button:hover {
+    background: #fff;
+    color: #333;
+}
+
+.left {
+    grid-area: leftsidebar;
+    background-color: #eee;
+    padding: 12px;
+}
+
+.main {
+    grid-area: main;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 12px 0; 
+    background-color: #fafafa;
+}
+
+.main::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.main::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+  
+.main::-webkit-scrollbar-thumb {
+  background: #aaaaaa;; 
+  border-radius: 2px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: #777777; 
+}
+
+.right {
+    grid-area: rightsidebar;
+    background-color: #eee;
+    padding: 12px;
+}
+
+.debt-sum {
+    margin: 0 0 16px 0;
+}
+
+.debt-sum label {
+    display: inline-block;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.debt-sum div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.debtrow {
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.debtrow:hover {
+    background-color: #fff;
+}
+
+.click-wrapper {
+    width: 100%;
+    cursor: pointer;
+}
+
+.debtdata {
+    padding: 6px 0;
+}
+
+.repayment {
+    margin: 0 0 0 auto;
+}
+
+.repayment input {
+    padding: 8px;
+    text-transform: uppercase;
+    outline: none;
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.repayment input:hover {
+    background: #333;
+    color: #fff;
+}
+
+.amount-row {
+    margin: 3px 0 0 0;
+}
+
+.separator {
+    margin: 0 6px;
+}
+
+.checkbox {
+    margin: 0 6px 0 0;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.amount {
+    display: inline-block;
+    min-width: 100px;
+    margin: 0 0 0 20px;
+}
+
+.paid-amount {
+    display: inline-block;
+    min-width: 100px;
+    color: #60a917;
+}
+
+.remaining-amount {
+    display: inline-block;
+    min-width: 100px;
+    color: #da5a53;
+}
+
+.clear-selection input {
+    padding: 8px;
+    text-transform: uppercase;
+    outline: none;
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.clear-selection input:hover {
+    background: #333;
+    color: #fff;
+}

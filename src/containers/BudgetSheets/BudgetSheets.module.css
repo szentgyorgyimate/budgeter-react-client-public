@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "leftsidebar main rightsidebar";
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 280px 1fr 280px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.yearselector {
+  padding: 8px;
+  margin: 0 0 0 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #333;
+}
+
+.yearselector:focus {
+  outline: none;
+}
+
+.header {
+  grid-area: header;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.header span {
+  display: inline-block;
+  width: 256px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header button {
+  padding: 8px;
+  text-transform: uppercase;
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-left: 16px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.header button:hover {
+  background: #fff;
+  color: #333;
+}
+
+.left {
+  grid-area: leftsidebar;
+  background-color: #eee;
+  padding: 12px;
+}
+
+.main {
+  grid-area: main;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 12px;
+  background-color: #fafafa;
+}
+
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 2px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: #777777;
+}
+
+.right {
+  grid-area: rightsidebar;
+  background-color: #eee;
+  padding: 12px;
+}

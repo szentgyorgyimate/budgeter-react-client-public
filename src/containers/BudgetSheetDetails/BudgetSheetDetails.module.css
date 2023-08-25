@@ -1,0 +1,168 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "leftsidebar main rightsidebar";
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 280px 1fr 280px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.header a,
+.header a:active,
+.header a:visited,
+.header a:hover {
+  display: inline-block;
+  width: 256px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header button {
+  padding: 8px;
+  text-transform: uppercase;
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-left: 16px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.header button:hover {
+  background: #fff;
+  color: #333;
+}
+
+.left {
+  grid-area: leftsidebar;
+  background-color: #eee;
+  padding: 12px;
+}
+
+.main {
+  grid-area: main;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 12px;
+  background-color: #fafafa;
+}
+
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 2px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: #777777;
+}
+
+.right {
+  grid-area: rightsidebar;
+  background-color: #eee;
+  padding: 12px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightblue;
+}
+
+.dategroup {
+  margin: 0 0 16px 0;
+}
+
+.dategroup-header {
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.dategroup-header i {
+  padding: 0 4px 0 0;
+}
+
+.dayname {
+  margin: 0 0 0 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.budgetrow {
+  margin: 0 0 8px 0;
+}
+
+.dategroup-footer {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 8px 0;
+}
+
+.daily-balance {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.budgetrow-header {
+  display: flex;
+  align-items: center;
+}
+
+.category-tag {
+  color: #444;
+  background-color: #f0f19c;
+  padding: 4px;
+  margin: 0 0 0 auto;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.financial-resource-tag {
+  color: #444;
+  background-color: #a9c4ee;
+  padding: 4px;
+  margin: 0 0 0 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.edit-button {
+  margin: 0 0 0 8px;
+  cursor: pointer;
+}
+
+.delete-button {
+  margin: 0 0 0 8px;
+  cursor: pointer;
+  color: #da5a53;
+}
+
+.positive-amount {
+  color: #60a917;
+}
+
+.negative-amount {
+  color: #da5a53;
+}

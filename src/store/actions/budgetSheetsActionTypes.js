@@ -1,0 +1,13 @@
+export const INIT = 'INIT';
+export const ADD_INIT = 'ADD_INIT';
+export const ADD_SUCCESS = 'ADD_SUCCESS';
+export const ADD_CANCEL = 'ADD_CANCEL';
+export const EDIT_INIT = 'EDIT_INIT';
+export const EDIT_SUCCESS = 'EDIT_SUCCESS';
+export const EDIT_CANCEL = 'EDIT_CANCEL';
+export const DELETE_INIT = 'DELETE_INIT';
+export const DELETE_SUCCESS = 'DELETE_SUCCESS';
+export const DELETE_CANCEL = 'DELETE_CANCEL';
+export const GET_BUDGETSHEETS_BY_YEAR_START = 'GET_BUDGETSHEETS_BY_YEAR_START';
+export const SET_YEAR = 'SET_YEAR';
+export const SET_LOADED_BUDGETSHEETS = 'SET_LOADED_BUDGETSHEETS';

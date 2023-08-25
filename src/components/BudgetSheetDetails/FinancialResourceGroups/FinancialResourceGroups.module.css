@@ -1,0 +1,28 @@
+.financial-resource {
+  margin: 0 0 16px 0;
+}
+
+.financial-resource-name {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.financial-resource-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.financial-resource-summary {
+  padding: 16px 0 0 0;
+  border-top: 1px solid #ccc;
+}
+
+.positive-amount {
+  color: #60a917;
+}
+
+.negative-amount {
+  color: #da5a53;
+}

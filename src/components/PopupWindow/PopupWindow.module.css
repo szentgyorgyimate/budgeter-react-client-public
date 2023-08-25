@@ -1,0 +1,99 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgb(0,0,0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    z-index: 2;
+    padding: 16px 24px;
+    background-color: #ffffff;
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+    min-width: 30%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 16px 0;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+
+.header i:hover {
+    background-color: #dddddd;
+}
+
+.buttons {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.accept {
+    margin: 0 0 0 8px;
+}
+
+.accept-button,
+.accept-button-disabled,
+.cancel-button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    min-width: 135px;
+    text-transform: uppercase;
+}
+
+.accept-button i,
+.accept-button-disabled i,
+.cancel-button i {
+    margin: 0 5px 0 0;
+}
+
+.accept-button {
+    background-color: #37c730;
+}
+
+.accept-button:hover {
+    background-color: #2b9925;
+}
+
+.accept-button-disabled {
+    background-color: rgb(55, 199, 48, 0.5);
+    cursor: not-allowed;
+}
+
+.cancel-button {
+    background-color: #e0535e;
+}
+
+.cancel-button:hover {
+    background-color: #ad4049;
+}

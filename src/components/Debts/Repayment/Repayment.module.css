@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    color: #2C86FC;
+    text-transform: uppercase;
+    padding: 0 0 3px 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.container span {
+    margin: 0 0 12px 0;
+}
+
+.container input {
+    padding: 8px;
+    margin: 0 0 12px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container input:focus {
+    outline: 1px solid #2C86FC;
+    border: 1px solid #2C86FC;
+}
+
+.paid-amount {
+    color: #60a917;
+}
+
+.remaining-amount {
+    color: #da5a53;
+}
+
+.buttons {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    min-width: 135px;
+    text-transform: uppercase;
+    margin: 0 0 0 6px;
+    background-color: #f97f38;
+}
+
+.buttons button:hover {
+    background-color: #d85f18;
+}
+
+.selector {
+    margin: 0 0 12px 0;
+}

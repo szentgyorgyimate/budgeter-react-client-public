@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    color: #2C86FC;
+    text-transform: uppercase;
+    padding: 0 0 3px 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.container input {
+    padding: 8px;
+    margin: 0 0 12px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container input[type=text]:focus,
+.container input[type=date]:focus {
+    outline: 1px solid #2C86FC;
+    border: 1px solid #2C86FC;
+}
+
+.financial-resource-row {
+    display: flex;
+    flex-direction: column;
+}
